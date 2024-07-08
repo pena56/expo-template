@@ -1,0 +1,55 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"correctness": {
+				"noUnusedImports": "error",
+				"noUnusedVariables": "error"
+			},
+			"style": {
+				"useFilenamingConvention": {
+					"level": "error",
+					"options": {
+						"filenameCases": ["kebab-case"]
+					}
+				},
+				"useNamingConvention": {
+					"level": "error",
+					"fix": "safe",
+					"options": {
+						"conventions": [
+							{
+								"formats": ["camelCase", "PascalCase"]
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single"
+		}
+	},
+	"files": {
+		"ignore": [
+			"env.js",
+			".husky",
+			".vscode",
+			"tsconfig.json",
+			"biome.json",
+			"babel.config.js",
+			"tailwind.config.js",
+			"app.config.ts",
+			"nativewind-env.d.ts",
+			"metro.config.js",
+			"package.json"
+		]
+	}
+}

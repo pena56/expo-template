@@ -1,0 +1,17 @@
+{
+  "React Native Screen Component": {
+    "prefix": "rns",
+    "body": [
+      "import { Text, View } from \"react-native\";",
+      "",
+      "export default function ${1:Screen}() {",
+      "\treturn (",
+      "\t\t<View className=\"flex-1 items-center justify-center bg-[#F1F1F1]\">",
+      "\t\t\t<Text className=\"text-center text-3xl\">${1:Screen}</Text>",
+      "\t\t</View>",
+      "\t);",
+      "}"
+    ],
+    "description": "Create a React Native screen component"
+  }
+}
