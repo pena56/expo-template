@@ -13,20 +13,9 @@
 			},
 			"style": {
 				"useFilenamingConvention": {
-					"level": "error",
+					"level": "warn",
 					"options": {
 						"filenameCases": ["kebab-case"]
-					}
-				},
-				"useNamingConvention": {
-					"level": "error",
-					"fix": "safe",
-					"options": {
-						"conventions": [
-							{
-								"formats": ["camelCase", "PascalCase"]
-							}
-						]
 					}
 				}
 			}
@@ -34,7 +23,8 @@
 	},
 	"javascript": {
 		"formatter": {
-			"quoteStyle": "single"
+			"quoteStyle": "single",
+			"indentWidth": 2
 		}
 	},
 	"files": {
@@ -42,6 +32,7 @@
 			"env.js",
 			".husky",
 			".vscode",
+			"node_modules",
 			"tsconfig.json",
 			"biome.json",
 			"babel.config.js",
